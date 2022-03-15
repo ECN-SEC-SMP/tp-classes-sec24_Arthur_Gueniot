@@ -16,5 +16,6 @@ void Forme::operator+=(Forme const&f1){
 }
 
 ostream& operator<<(ostream& os, const Forme &f){
-  os << "abscisse : "<< f.p1->getAbscisse() << " ordonnee : " << f.p1->getOrdonnee();
+  os << f.p1;
+  return os;
 }

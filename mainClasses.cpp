@@ -1,6 +1,8 @@
 #include <iostream>
 #include "Point.h"
 #include "Forme.h"
+#include "Rectangle.h"
+#include "Cercle.h"
 
 using namespace std;
 
@@ -12,11 +14,11 @@ int main() {
 
   
   /* Test  des fonctions Getter et vérification des getter */
-  cout << "Abscsisse P1: "<< p1.getAbscisse() << endl;
-  cout << "Ordonnée P1: "<< p1.getOrdonnee() << endl;
+  // cout << "Abscsisse P1: "<< p1.getAbscisse() << endl;
+  // cout << "Ordonnée P1: "<< p1.getOrdonnee() << endl;
   
-  cout << "Abscsisse P2: "<< p2.getAbscisse() << endl;
-  cout << "Ordonnée P2: "<< p2.getOrdonnee() << endl;
+  // cout << "Abscsisse P2: "<< p2.getAbscisse() << endl;
+  // cout << "Ordonnée P2: "<< p2.getOrdonnee() << endl;
   
   /* Test de CRÉATION D’UNE CLASSE POINT */
   // /* Translater P1 de P2 */
@@ -34,7 +36,19 @@ int main() {
   /* Test de 2 SURCHAGE D’OPÉRATEURS */
   /* Test surcharge opérateur += et << */
   p1 += p2;
-  cout << p1 << endl;
+  // cout << p1 << endl;
+
+  /* Test de 4 FORMES GÉOMÉTRIQUES CONCRÈTES */
+  /* Test rectangle */
+  Rectangle rec(&p1,10,20);
+  cout<<rec<<endl;
+
+  /* Test de Cercle */
+  Cercle rond(&p2, 3);
+  cout << rond << endl;
+
+  rond.getPtrPoint()->translater(5,6);
+  cout << rond << endl;
   
   return 0;
 }

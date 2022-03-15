@@ -6,7 +6,7 @@
 using namespace std;
 
 class Forme { 
-  private :
+  protected :
     Point *p1;
 
   public :
@@ -18,6 +18,7 @@ class Forme {
     /* Redéfinition de l'operateur << */
     friend ostream& operator<<(ostream& os, const Forme &f);
 
-    virtual int perimetre()=0;
-    virtual int surface()=0;
+    virtual float perimetre()=0;
+    virtual float surface()=0;
+    virtual ~Forme(){}
 };
