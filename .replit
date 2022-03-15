@@ -1,4 +1,4 @@
 language = "cpp"
 run = "bash run.bash"
 
-entrypoint = "main.cpp"
+entrypoint = "mainClasses.cpp"
