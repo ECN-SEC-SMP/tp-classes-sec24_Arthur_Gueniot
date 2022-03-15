@@ -27,10 +27,10 @@ class Point {
   void setAbscisse(int x);
   void setOrdonnee(int y);
 
-  /* Redéfinitiond e l'opérateur '+=' */
+  /* Redéfinition de l'opérateur '+=' */
   void operator+=(Point const&p1);
 
-  /* operateur */
+  /* Redéfinition de l'operateur << */
   friend ostream& operator<<(ostream& os, const Point& p);
 
 };

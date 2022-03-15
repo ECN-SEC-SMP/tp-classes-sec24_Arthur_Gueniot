@@ -66,4 +66,4 @@ void Point::operator+=(Point const&p1) {
  ostream& operator<<(ostream& os, const Point& p){
      os << "abscisse : "<<p.abscisse << " ordonnee : " << p.ordonnee;
     return os;
-  }
+}
