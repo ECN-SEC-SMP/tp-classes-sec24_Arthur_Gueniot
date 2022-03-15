@@ -2,6 +2,8 @@
 
 #include <iostream>
 
+using namespace std;
+
 class Point {
   private:
   int abscisse;
@@ -24,4 +26,11 @@ class Point {
   /* Mutateur (setter) */
   void setAbscisse(int x);
   void setOrdonnee(int y);
+
+  /* Redéfinitiond e l'opérateur '+=' */
+  void operator+=(Point const&p1);
+
+  /* operateur */
+  friend ostream& operator<<(ostream& os, const Point& p);
+
 };

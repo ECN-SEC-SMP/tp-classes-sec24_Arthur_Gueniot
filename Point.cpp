@@ -18,11 +18,13 @@ Point::Point(){
 Point::Point(int x, int y){
   this->abscisse = x;
   this->ordonnee = y;
+  
 }
 /*constructeur de recopie*/
 Point::Point(const Point &p){
   this->abscisse = p.abscisse;
   this->ordonnee = p.ordonnee;
+  
 }
 
 /* Définition de la fonction translater() */
@@ -54,3 +56,14 @@ void Point::setAbscisse(int x){
 void Point::setOrdonnee(int y){
   this->ordonnee = y;
 }
+
+/* Surccharge de l'opérateur += */
+void Point::operator+=(Point const&p1) {
+  this->abscisse += p1.abscisse;
+  this->ordonnee += p1.ordonnee;
+}
+
+ ostream& operator<<(ostream& os, const Point& p){
+     os << "abscisse : "<<p.abscisse << " ordonnee : " << p.ordonnee;
+    return os;
+  }
