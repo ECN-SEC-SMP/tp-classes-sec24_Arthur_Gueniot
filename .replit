@@ -1,4 +1,4 @@
 language = "cpp"
-run = "bash run.bash"
+run = "make;./out/mainClasses.out"
 
 entrypoint = "mainClasses.cpp"

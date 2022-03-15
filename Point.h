@@ -19,7 +19,7 @@ class Point {
 
   /* Accesseur (getter) */
   int getAbscisse() const;
-  int getOrdonne() const;
+  int getOrdonnee() const;
 
   /* Mutateur (setter) */
   void setAbscisse(int x);

@@ -42,7 +42,7 @@ int Point::getAbscisse() const{
   return this->abscisse;
 }
 
-int Point::getOrdonne() const{
+int Point::getOrdonnee() const{
   return this->ordonnee;
 }
 
